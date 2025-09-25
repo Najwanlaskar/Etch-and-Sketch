@@ -1,8 +1,22 @@
-//put the gridn squares inside a container div (HTML)
-//16x16 square grid of div
-//FlexBox can be used to make the divs appear as a grid
-//set a hovering effect so grid divs change color when 
-//you hover over them
-//add a button top of the screen that will promt the user for the number of squares per side wanted
-//limit should be 100
-//new grid should be same size as the other ones
+//put the grind squares inside a container div (HTML)
+const Container=document.querySelector(".container");
+const btn=document.querySelector(".Display");
+const colbtn=document.querySelector(".color");
+
+
+let containerSize=520;
+let size=16;
+function CreateColumn(size){
+        Container.innerHTML = "";
+        for(i=0;i<size*size;i++){                                                    
+        const square = document.createElement("div");
+        square.classList.add("square")
+        square.style.border = "1px solid";
+          square.style.background="white"
+        square.style.height= square.style.width= `${(containerSize/size)-2}px`;
+        Container.appendChild(square);
+
+{
+} }
+}
+CreateColumn(size)
